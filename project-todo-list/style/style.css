@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../img/orquidea.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;;
+  margin: 0px;
+  min-height: 1200px;
+  padding: 0px;
+}
+
+header{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+header h1{
+  color: #525252;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+#funcionamento{
+  color: #6b6b6b;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.container{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+#texto-tarefa{
+  background-color: rgba(255,255,255, 0.3);
+  border-radius: 12px;
+  border: 2px solid #3333;
+  color: #525252;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 30px;
+  width: 300px;
+}
+
+#lista-tarefas{
+  display: block;
+  position: relative;
+  margin-left: 150px;
+  margin-top: 40px;
+}
+
+#lista-tarefas li {
+  border-radius: 8px;
+  border: 2px solid #3333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 8px;
+  width: 500px;
+}
+
+.select{
+  color: white;
+  width: 100px;
+}
+
+#container-glass{
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  box-shadow: 0 0 15px black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  margin-left: 500px;
+  padding-bottom: 30px;
+  position: relative;
+  top: 30px;
+  width: 50%;
+}
+
+#date{
+  color: #555555;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+
+/* Button */
+.container-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#apaga-tudo, #remover-finalizados, #remover-selecionado{
+  margin-left: 20px;
+  
+  border: 1px solid #555555;
+  font-weight: 50px;
+  color: #1a181a; 
+  background-color: rgba(255,255,255, 0.3);
+  
+  text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+  
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+  box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+}
+
+#remover-finalizados:hover, #remover-selecionado:hover, #apaga-tudo:hover{
+  background-color: rgba(85, 85, 85, 0.4);
+  color: white;
+}
+
+#criar-tarefa, #mover-cima, #mover-baixo, #salvar-tarefas{
+  margin-left: 20px;  
+  color: #1a181a;
+  
+  border: 1px solid rgb(100, 65, 246);
+  font-weight: 50px;
+  color: black; 
+  background-color: rgba(255,255,255, 0.3);
+  
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+  box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+}
+
+#criar-tarefa:hover, #mover-cima:hover, #mover-baixo:hover, #salvar-tarefas:hover{
+  background-color: rgba(100, 65, 246, 0.3);
+  color:white;
+}
+
+#criar-tarefa, #apaga-tudo{
+  margin-top: 30px; 
+}
