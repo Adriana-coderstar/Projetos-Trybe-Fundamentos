@@ -7,6 +7,7 @@ const deletList = document.getElementById('apaga-tudo');
 const moverCima = document.getElementById('mover-cima');
 const moverBaixo = document.getElementById('mover-baixo');
 const removeSelect = document.getElementById('remover-selecionado');
+const data = document.getElementById('date');
 
 
 function inputTask() {
@@ -110,3 +111,16 @@ function deleteSelect() {
 }
 
 removeSelect.addEventListener('click', deleteSelect)
+
+// Inserir data
+  const date = new Date();
+  const formatter = Intl.DateTimeFormat('pt-BR', {
+    weekday: "long",
+    year:"numeric",
+    month:"long",
+    day:"numeric",
+    hour:"numeric",
+    minute:"numeric",
+  });
+
+  data.innerHTML = formatter.format(date);
