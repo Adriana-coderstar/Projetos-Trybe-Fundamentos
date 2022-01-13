@@ -89,7 +89,7 @@ header h1{
   width: 50%;
 }
 
-#date{
+.date-hour{
   color: #555555;
   display: flex;
   font-family: 'Roboto', sans-serif;
@@ -97,6 +97,15 @@ header h1{
   margin-left: 20px;
   margin-top: 30px;
   position: relative;
+  text-transform: capitalize;
+}
+
+.clock{
+  margin-left: 2px;
+}
+
+.clock-img{
+  margin-left: 12px;
 }
 
 /* Button */

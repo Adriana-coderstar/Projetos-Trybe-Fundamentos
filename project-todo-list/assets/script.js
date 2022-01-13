@@ -113,14 +113,21 @@ function deleteSelect() {
 removeSelect.addEventListener('click', deleteSelect)
 
 // Inserir data
-  const date = new Date();
+function displayTime() {
+  let date = new Date();
+  let time = date.toLocaleTimeString();
+  document.querySelector('.clock').textContent = time;
+  
   const formatter = Intl.DateTimeFormat('pt-BR', {
     weekday: "long",
     year:"numeric",
     month:"long",
     day:"numeric",
-    hour:"numeric",
-    minute:"numeric",
   });
+  
+  data.innerHTML = formatter.format();
+}
 
-  data.innerHTML = formatter.format(date);
+displayTime();
+const createClock = setInterval(displayTime, 1000);
+
