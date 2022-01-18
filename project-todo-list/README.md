@@ -1,4 +1,4 @@
-#Projeto Todo List
+# Projeto Todo List
 ## Realizado pelo curso de Desenvolvimento Web Full Stack pela Trybe
 
 ## :rocket: Tecnologias usadas:
