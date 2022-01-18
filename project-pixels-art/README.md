@@ -1,4 +1,4 @@
-#Projeto Pixel Art
+# Projeto Pixel Art
 ## Realizado pelo curso de Desenvolvimento Web Full Stack pela Trybe
 
 ## :rocket: Tecnologias usadas:
